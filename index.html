@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Viewer with Zoom and Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- <input type="file" id="pdfInput" accept=".pdf"> -->
+  <div class="buttons">
+    <div class="zoom-buttons">
+        <button id="zoomInButton" class="control-button">Zoom In</button>
+        <button id="zoomOutButton" class="control-button">Zoom Out</button>
+    </div>
+    <div class="page-buttons">
+        <button id="prevButton" class="control-button">Previous</button>
+        <button id="nextButton" class="control-button">Next</button>
+    </div>
+  </div>
+  <div id="pdfContainer" class="pdf-container"></div>
+  <div class="input-field">
+    <input type="file" id="pdfInput" accept=".pdf">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
